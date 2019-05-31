@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 /**
  * Note: The returned array must be malloced, assume caller calls free().
@@ -14,16 +15,6 @@ int main()
     int target = 9;
     int *result;
     result = twoSum(nums, sizeof(nums), target);
-    if (nums[result[0]] + nums[result[1]] == target)
-    {
-        printf("pass\n");
-    }
-    else
-    {
-        printf("error\n");
-    }
-
-    result = twoSum2(nums, sizeof(nums), target);
     if (nums[result[0]] + nums[result[1]] == target)
     {
         printf("pass\n");
