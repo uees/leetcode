@@ -27,7 +27,7 @@ class Solution:
 
             while cursum >= s:
                 mincount = min(mincount, right-left+1)
-                cursum = cursum-nums[left]
+                cursum -= nums[left]
                 left += 1
 
         return mincount if mincount != float('inf') else 0
